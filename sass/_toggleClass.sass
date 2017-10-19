@@ -1,0 +1,152 @@
+// sideSlide.js - SIDE CONTENT *****************
+// <--
+.side-expand
+  .jumbotron
+    flex: 1
+
+  .side-content 
+    flex: 10
+
+    .scroll-side
+      transform: rotate(315deg)
+
+    .photo-cv
+      display: block
+
+  @include bp-xlarge
+    .jumbotron
+      flex: 2
+
+    .side-content 
+      flex: 3    
+
+  @include bp-large
+    .jumbotron
+      h1
+        font-size: 40px
+        margin-left: 8px
+
+  @include bp-medium
+    .jumbotron
+      h1
+        font-size: 38px
+        margin-left: 2px
+
+.content-display
+
+  height: 100%
+  width: 85%
+
+  opacity: 1
+
+  @include bp-small
+    width: 95%
+
+  .p-txt
+    opacity: 1
+    line-height: 150%
+ 
+    margin: 12.5%
+
+    @include bp-small
+      margin: 20% 2% 5% 10%
+      text-align: justify
+
+
+
+
+//MIDDLE SECTION - TECH ICONS ********************
+
+.techlogo-active
+  height: 100px
+  opacity: 1
+
+  @include bp-medium
+    height: 100px * 3 / 4
+  @include bp-small
+    height: 100px * 2 / 3
+
+
+
+// PROGRESS BAR -- TOGGLE CLASS
+
+.progress-active
+  .prog-item
+    &:before
+
+      width: 10px
+      height: 10px
+      transform: rotate(405deg)
+      line-height: 50px
+      border: 3px solid white
+
+    &:after
+
+      content: ''
+      position: absolute
+      left: 7px
+      top: 20px
+      width: 2px
+
+      height: 100% / 8
+
+      background-color: white
+      transform: rotate(360deg)
+
+  
+  
+// HEADING -- jQuery waypoint
+
+.h-active
+  top: 50px
+  right: 50px
+  @include bp-medium
+    right: 10px
+  @include bp-small
+    right: 5px
+
+// PORTFOLIO -- INFO SLIDE IN ********************
+
+.project-slide
+  .p-info
+    top: calc(50% - 80px)
+    left: 150px
+    width: 60px
+    height: 160px
+  
+    background-color: lighten($grey, 15%)
+    span
+      display: block
+
+    @include bp-medium
+      left: 128px 
+    @include bp-small
+      left: 80px
+    
+
+
+  .project-pic
+    // margin-bottom: 40px
+    left: -25px
+    transform: scale(0.95)
+
+
+// jQuery WAYPOINTS -- backTo btns **************
+
+.btnBM-active
+  right: 20px
+  @include bp-small
+    right: 10px
+
+.btnUPtop-active
+  right: 20px
+  bottom: 80px
+  @include bp-small
+    right: 10px
+
+.btnUPbtm-active
+  right: 20px
+  bottom: 20px
+  @include bp-small
+    right: 10px
+

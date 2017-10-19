@@ -1,0 +1,109 @@
+//BREAKPOINTS ***************************************
+
+@mixin bp-xlarge
+  @media only screen and (min-width: ($w-bp-large + 1px))
+    @content
+
+@mixin bp-large 
+  @media only screen and (min-width: ($w-bp-med + 1px)) and (max-width: $w-bp-large)
+    @content    
+    
+@mixin bp-medium
+  @media only screen and (min-width: ($w-bp-small + 1px)) and (max-width: $w-bp-med)
+    @content
+
+@mixin bp-small 
+  @media only screen and (max-width: $w-bp-small)
+    @content
+
+@mixin bp-medium-landscape
+  @media only screen and (max-width: 740px) and (orientation : landscape)
+    @content
+
+
+// PROGRESSBAR ***************************************
+
+@mixin progressbar-style
+  
+
+
+
+  &:before 
+    position: absolute
+    content: ''
+    display: block
+    margin-top: 42px
+    left: 0
+    width: 10px
+    height: 10px
+    display: block
+    text-align: center
+    border-radius: 5px
+    background-color: $blue
+    letter-spacing: 0px
+    z-index: 1
+    transition: 600ms
+  &:after
+    height: 1%
+  
+// PORTFOLIO IMG STYLE
+
+@mixin portfolio-img
+  position: absolute
+  background-size: contain
+  background-position: center
+  background-repeat: no-repeat
+  width: 100%
+  height: 100%
+  transition: 1s ease-out
+
+// FIXED BACK TO BTNs
+
+@mixin btn-box-style
+  position: fixed
+  right: -100px
+  width: 50px
+  height: 50px
+  background-color: $blue
+  border-radius: 10px
+  transition: 300ms
+  z-index: 1000
+
+  &:hover
+    cursor: pointer
+    transform: scale(1.1)
+
+  @include bp-small
+    width: 40px
+    height: 40px
+
+@mixin btn-inside-style
+  position: relative
+  left: 20%
+  width: 60%
+  height: 4px
+  color: $pale-black
+  font-weight: bold
+  animation: jump2 800ms linear infinite both
+  &:before
+    content: ''
+    position: absolute
+    top: -20px
+    right: 4px
+    width: 50%
+    height: 4px
+    border-radius: 10px
+    color: white
+    transform: rotate(60deg)
+    background-color: $pale-black
+  &:after
+    content: ''
+    position: absolute
+    top: -20px
+    left: 4px
+    width: 50%
+    height: 4px
+    border-radius: 10px
+    color: white
+    transform: rotate(-60deg)
+    background-color: $pale-black

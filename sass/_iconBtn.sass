@@ -1,0 +1,233 @@
+
+// HEADER
+//*****************************************
+.logo
+  background-image: url('../../img/logo/ao-logo.png')
+  background-position: center
+  background-size: contain
+  background-repeat: no-repeat
+  width: 50px
+  height: 50px
+
+  position: fixed
+  top: 50px
+  left: 25px 
+  z-index: 100
+  transition: 500ms ease-in-out
+  &:hover
+    cursor: pointer
+    
+    transform: rotate(-90deg) 
+
+
+  @include bp-medium
+    top: 14px
+    left: 10px  
+
+  @include bp-small
+    width: 45px
+    height: 45px
+    top: 9px
+    left: 10px
+
+
+.github
+  background-image: url('../../img/tech/github1.png')
+  background-position: center
+  background-size: 100%
+  width: 50px
+  height: 50px
+
+  position: absolute
+  top: 52px
+  right: 225px 
+  transition: transform 500ms ease-in-out 
+
+  @include bp-medium
+    top: 14px
+    right: 100px
+
+  @include bp-small
+    width: 38px
+    height: 38px
+    top: 13px
+    right: 80px
+
+  &:hover
+    cursor: pointer
+    animation: pulse 400ms ease-out infinite both
+
+.linkedin
+  position: absolute
+  top: 47px
+  right: 325px
+  transform: scale(1.0)
+
+
+  @include bp-medium
+    top: 9px
+    right: 160px
+
+  @include bp-small
+    top: 7px
+    right: 120px
+
+  i
+    font-size: 50px
+    color: $blue
+
+    @include bp-small
+      font-size: 41px
+
+
+  &:hover
+    cursor: pointer
+    animation: pulse 400ms ease-out infinite both
+
+.email
+  position: absolute
+  top: 57px
+  right: 114px
+
+  transition: transform 300ms ease-in-out  
+
+  @include bp-medium
+    top: 18px
+    right: 35px
+
+  @include bp-small
+    top: 16px
+    right: 30px
+  i
+    font-size: 38px
+    color: $blue
+    @include bp-small
+      font-size: 32px
+
+
+  &:hover
+    cursor: pointer
+    
+    animation: pulse 300ms ease-out infinite both
+
+
+//BACK TO TOP BTNS FIXED ********************
+
+.backToTop-box
+  bottom: 80px
+
+  @include btn-box-style
+
+
+  .backToTop
+    top: 24px
+    @include btn-inside-style
+
+    span
+      font-size: 10px
+      position: absolute
+      bottom: 0px
+      left: 50%
+      color: $pale-black
+      font-weight:bold
+      transform: translate(-50%, -10%)
+
+
+
+// MIDDLE
+
+.backToMiddle-box
+  bottom: 20px
+ 
+  @include btn-box-style
+  span
+    font-size: 10px
+    position: absolute
+    bottom: 0px
+    left: 50%
+    color: $pale-black
+    font-weight:bold
+    transform: translate(-50%, -10%)
+
+
+  .backToMiddle
+    top: 10px
+    @include btn-inside-style
+
+
+// **********************************************
+// SCROLL DOWN + LINE (ANIMATION) BTN
+
+.scroll-down
+
+  width: 30px
+  height: 30px
+  border: 3px solid $dark-grey
+  position: absolute
+  bottom: 20px
+  left: calc(50% - 15px)
+  transition: 400ms
+  border-radius: 15px
+  
+
+  @include bp-small
+    width: 20px
+    height: 20px
+    left: calc(50% - 10px)
+  
+  animation: jump 800ms ease-out infinite both   
+
+  @media only screen and (min-width: ($w-bp-med + 1px))
+    &:hover
+      transform: rotate(45deg)
+      bottom: 35px
+      cursor: pointer
+      background-color: inherit
+      border-left: none
+      border-top: none
+      border-radius: 5px
+
+
+.line
+  position: absolute
+  bottom: 65px
+  left: calc(50% - 1px)
+  height: 0
+  background-color: $dark-grey
+  width: 2px
+  transition: 300ms
+  opacity: 0.6
+  animation: lineUpDown 2s linear infinite reverse 
+
+  @include bp-small
+ 
+    left: calc(50% - 1px)
+    bottom: 45px
+
+// SIDE CONTENT BTN *****************************************
+
+.scroll-side
+  position: absolute
+  top: 42px
+  left: 10px
+  width: 12px
+  height: 12px
+  border-bottom: 2px solid $blue
+  border-right: 2px solid $blue
+  border-radius: 3px
+  transition: 1s
+  transform: rotate(135deg)
+
+  animation: slide 1600ms ease-out infinite both
+
+  @include bp-large
+    bottom: 15px
+
+  @include bp-medium
+    bottom: 15px
+
+  @include bp-small
+    bottom: 12px
+
+
+
