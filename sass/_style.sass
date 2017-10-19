@@ -124,7 +124,8 @@ header
   background-position: center
   background-repeat: no-repeat
   transition: 300ms
-
+  &:hover
+    cursor: pointer
   i
     position: absolute
     font-size: 60px
@@ -132,6 +133,10 @@ header
     left: -43px
     z-index: 100
     color: $blue
+    &:hover
+      cursor: pointer
+      color: lighten($blue, 5%)
+
 
     @include bp-small
       font-size: 40px
@@ -150,6 +155,8 @@ header
   width: 100%
   height: 100%
   border-top-left-radius: 15px
+  &:hover
+    background-color: rgba(34, 52, 70, 0.9)
   
 .txt-box
   position: relative
@@ -237,6 +244,7 @@ header
 
 .h-wp
   top: 900px
+  right: 50px
   transition: 600ms ease-out
 
 .bg-portfolio
