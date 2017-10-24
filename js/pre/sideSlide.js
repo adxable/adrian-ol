@@ -1,10 +1,10 @@
-var side = document.querySelector('.side-content');
-var txt = document.querySelector('.txt-box');
-var container = document.querySelector('.top-container')
+var side = document.querySelector('.containerTop__sideContent');
+var txt = document.querySelector('.sideContent__txtBox');
+var container = document.querySelector('.containerTop')
 
 side.addEventListener('click', function() {
-	container.classList.toggle('side-expand');
-	txt.classList.toggle('content-display');
+	container.classList.toggle('containerTop--active');
+	txt.classList.toggle('sideContent__txtBox--active');
 
 
 });

@@ -21,7 +21,7 @@ header
 
 // TOP SECTION ***************************************
 
-.top-container
+.containerTop
   display: flex
   flex-direction: row
   min-height: calc(100vh - 150px)
@@ -55,7 +55,7 @@ header
 
 //********
 
-.bg-sq
+.jumbotron__bq
   position: absolute
   background-image: url('../../img/background/bg-sq.png')
   background-size: 20%
@@ -72,7 +72,7 @@ header
   @include bp-small
     background-size: 70%
 //********
-.slogan
+.jumbotron__slogan
   display: block 
   text-transform: uppercase 
   z-index: 2
@@ -84,20 +84,20 @@ header
     line-height: 85px
     text-align: left
     
-    .slogan-bg
+    .jumb-slogan__bg
       background-color: lighten($grey, 18%)
       border-radius: 5px
       padding: 4px
       font-weight: bold
 
-    .slogan-dots
+    .jumb-slogan__dots
       color: rgba(52, 152, 219, 0.4)
       letter-spacing: -1px
  
     @include bp-medium
       margin-left: 15px
       font-size: 42px    
-      .slogan-bg
+      .jumb-slogan__bg
         padding: 2px
 
     @include bp-small
@@ -107,17 +107,16 @@ header
       line-height: 35px
       letter-spacing: 0
 
-      .slogan-bg
+      .jumb-slogan__bg
         padding: 4px
 
 //******
 
-.side-content
+.containerTop__sideContent
   flex: 1
   position: relative
 
   border-top-left-radius: 15px
-  
   box-shadow: -1px 0px 3px 0px $dark-grey, -1px 5px 5px -10px $dark-grey
   background-image: url('../../img/background/dots.png')
   background-size: cover
@@ -147,7 +146,7 @@ header
       display: block
       margin-top: 20px
   
-.side-bg-color
+.sideContent__bgColor
   position: absolute
   top: 0
   left: 0
@@ -158,7 +157,7 @@ header
   &:hover
     background-color: rgba(34, 52, 70, 0.9)
   
-.txt-box
+.sideContent__txtBox
   position: relative
   width: 1%
   height: 0
@@ -168,7 +167,7 @@ header
 
 
 // PARAGRAPH    
-.p-txt
+.txtBox__content
   opacity: 0
   font-size: 18px
 
@@ -189,25 +188,24 @@ header
 
 
 // WAYPOINT LINE STYLE
+
 .section-wp
   position: absolute
   top: 0
   width: 100%
   height: 4px
   background-color: black
-  z-index: 999
+
 
 
 .scroll
   transition: 1s 
   display: block
 
-.scroll-hide
-  display: none
-
 
 //**********************************************
-.middle-container
+
+.containerMid
   display: flex
   position: relative
   padding-bottom: 50px
@@ -215,7 +213,7 @@ header
   min-height: 100vh
 
 
-  h1
+  h2
     position: absolute
     font-size: 100px
     color: lighten($pale-black, 12%)
@@ -242,12 +240,12 @@ header
         border-radius: 5px
 // HEADING HIDE
 
-.h-wp
+.containerMid__title
   top: 900px
   right: 50px
   transition: 600ms ease-out
 
-.bg-portfolio
+.containerMid__img
   position: absolute
   top: 0
   right: 0
@@ -268,7 +266,7 @@ header
 
 // TECH ICONS *****************************
 
-.tech-box
+.containerMid__techBox
   display: flex
   align-items: flex-start
   background-color: lighten($pale-black, 10%)
@@ -278,7 +276,7 @@ header
     padding: 50px 5px 0 5px
 
 
-  .progressbar
+  .techBox__progressbar
     display: flex
     flex-direction: column
     position: relative
@@ -293,7 +291,7 @@ header
     &:last-child
       content: none
 
-.prog-item
+.techBox__listItem
   padding-top: 20px
   &:before 
     position: absolute
@@ -313,7 +311,7 @@ header
     height: 100% - (100% / 8)
   
 
-.tech-logo
+.techBox__logo
 
   display: flex
   background-position: center
@@ -323,7 +321,7 @@ header
   transition: 1200ms  
   margin-left: 25px
 
-.html-logo
+.techBox__html
   background-image: url('../../img/tech/html.png')
   width: $html
 
@@ -332,7 +330,7 @@ header
   @include bp-small
     width: $html * 2 / 3  
 
-.css-logo
+.techBox__css
   background-image: url('../../img/tech/css3.png')
   width: $css
   
@@ -341,7 +339,7 @@ header
   @include bp-small
     width: $css * 2 / 3  
 
-.bootstrap-logo
+.techBox__bootstrap
   background-image: url('../../img/tech/bootstrap.png')
   width: $bs
   
@@ -350,7 +348,7 @@ header
   @include bp-small
     width: $bs * 2 / 3   
 
-.grunt-logo
+.techBox__grunt
   background-image: url('../../img/tech/grunt.png')
   width: $gr
   
@@ -359,7 +357,7 @@ header
   @include bp-small
     width: $gr * 2 / 3  
 
-.git-logo
+.techBox__git
   background-image: url('../../img/tech/git.png')
   width: $git
   
@@ -368,7 +366,7 @@ header
   @include bp-small
     width: $git * 2 / 3 
 
-.javascript-logo
+.techBox__javascript
   background-image: url('../../img/tech/js-logo.png')
   width: $js
   
@@ -377,7 +375,7 @@ header
   @include bp-small
     width: $js * 2 / 3   
 
-.jquery-logo
+.techBox__jquery
   background-image: url('../../img/tech/jquery.png')
   width: $jq
   
@@ -385,7 +383,7 @@ header
     width: $jq * 3 / 4 
   @include bp-small
     width: $jq * 2 / 3   
-.sass-logo
+.techBox__sass
   background-image: url('../../img/tech/sass.png')
   width: $sass
   
@@ -397,7 +395,7 @@ header
 
 // PORTFOLIO ******
 
-.portfolio-box
+.containerMid__portfolio
   display: flex
   flex-direction: row
   flex-wrap: wrap
@@ -416,7 +414,7 @@ header
     justify-content: flex-start
     margin-left: 30px
 
-.project-box
+.containerMid__project
   position: relative
   width: $w
   height: $h
@@ -433,7 +431,7 @@ header
     width: $w * 2 / 3
     height: $h * 2 / 3
  
-.project-pic
+.project__img
   position: absolute
   top: 0
   left: 0
@@ -444,30 +442,30 @@ header
   border-radius: 10px
 
 @media only screen and (min-width: $w-bp-med + 1px)
-  .project-pic
+  .project__img
     &:hover
       cursor: pointer
       transform: scale(1.1)
 
-.project1
+.project__img1
   background-image: url('../../img/portfolio/dk340x620.jpg')
   @include portfolio-img
 
-.project2
+.project__img2
   background-image: url('../../img/portfolio/cw340x620.jpg')
   @include portfolio-img
 
 
-.project3
+.project__img3
   background-image: url('../../img/portfolio/m340x620.jpg')
   @include portfolio-img
 
-.project4
+.project__img4
   background-image: url('../../img/portfolio/ao340x620.jpg')
   @include portfolio-img
 
 
-.p-info
+.project__links
   display: flex
   flex-direction: column
   align-items: center
@@ -502,6 +500,8 @@ header
     display: none
     color: $blue
     font-size: 35px
+    &:hover
+      cursor: pointer
 
 // MODAL
 .modal-1
@@ -594,13 +594,11 @@ header
 
 //BOTTOM CONTAINER********************************
 
-.bottom-container
+.containerBottom
   position: relative
   width: 100%
 
-
-
-  h1  
+  h2  
 
     position: absolute
     top: 20px
@@ -628,13 +626,13 @@ header
 
       span
         border-radius: 5px
-.bg-bottom 
+
+.containerBottom__img 
   position: absolute
   background-image: url('../../img/background/bg-body.png')
   background-size: 100%
   background-repeat: no-repeat
   background-position: right
-  // background-blend-mode: color-dodge
   width: 100%
   height: 100%
   z-index: 0
@@ -642,7 +640,8 @@ header
 
 
 // CONTACT FORM ****************
-.form-container
+
+.containerBottom__form
   display: flex
   justify-content: flex-end
   width: 40%
@@ -663,6 +662,7 @@ form
   flex-wrap: wrap
   border-radius: 10px
   padding: 20px
+  z-index: 1009
   label
     padding-top: 20px
     color: white
@@ -682,7 +682,7 @@ form
     &:focus
       border: 2px solid $blue
     &:last-child
-      background-color: $blue
+      background-color: lighten($blue, 10%)
       border: none
     @include bp-medium  
       width: 100%
@@ -714,11 +714,18 @@ footer
   p 
     margin: 0
     padding: 5px
+    font-size: 12px
     text-align: center
-    background-color: $pale-black
+
+    @include bp-xlarge
+      text-align: right
+      padding-right: 100px
+    @include bp-large
+      text-align: right
+      padding-right: 100px
 
 
-.icons-container
+.footer__icons
   display: flex
   flex-direction: column
   flex-wrap: wrap
@@ -746,5 +753,5 @@ footer
 
 // @ < 767px
 @media only screen and (max-width: $w-bp-med)
-  .icons-container
+  .footer__icons
     padding: 20px 0 20px 10px

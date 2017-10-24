@@ -1,38 +1,35 @@
 // sideSlide.js - SIDE CONTENT *****************
 // <--
-.side-expand
+.containerTop--active
   .jumbotron
     flex: 1
 
-  .side-content 
+  .containerTop__sideContent
     flex: 10
 
-    .scroll-side
+    .sideContent__arrow
       transform: rotate(315deg)
-
-    .photo-cv
-      display: block
 
   @include bp-xlarge
     .jumbotron
       flex: 2
 
-    .side-content 
+    .containerTop__sideContent 
       flex: 3    
 
   @include bp-large
     .jumbotron
-      h1
+      h2
         font-size: 40px
         margin-left: 8px
 
   @include bp-medium
     .jumbotron
-      h1
+      h2
         font-size: 38px
         margin-left: 2px
 
-.content-display
+.sideContent__txtBox--active
 
   height: 100%
   width: 85%
@@ -42,7 +39,7 @@
   @include bp-small
     width: 95%
 
-  .p-txt
+  .txtBox__content
     opacity: 1
     line-height: 150%
  
@@ -57,7 +54,7 @@
 
 //MIDDLE SECTION - TECH ICONS ********************
 
-.techlogo-active
+.techBox__logo--active
   height: 100px
   opacity: 1
 
@@ -70,8 +67,8 @@
 
 // PROGRESS BAR -- TOGGLE CLASS
 
-.progress-active
-  .prog-item
+.techBox__progressbar--active
+  .techBox__listItem
     &:before
 
       width: 10px
@@ -97,7 +94,7 @@
   
 // HEADING -- jQuery waypoint
 
-.h-active
+.containerMid__title--active
   top: 50px
   right: 50px
   @include bp-medium
@@ -107,8 +104,8 @@
 
 // PORTFOLIO -- INFO SLIDE IN ********************
 
-.project-slide
-  .p-info
+.containerMid__project--active
+  .project__links
     top: calc(50% - 80px)
     left: 150px
     width: 60px
@@ -125,7 +122,7 @@
     
 
 
-  .project-pic
+  .project__img
     // margin-bottom: 40px
     left: -25px
     transform: scale(0.95)
@@ -133,18 +130,18 @@
 
 // jQuery WAYPOINTS -- backTo btns **************
 
-.btnBM-active
+.backToMiddle--active
   right: 20px
   @include bp-small
     right: 10px
 
-.btnUPtop-active
+.backToTop--active1
   right: 20px
   bottom: 80px
   @include bp-small
     right: 10px
 
-.btnUPbtm-active
+.backToTop--active2
   right: 20px
   bottom: 20px
   @include bp-small

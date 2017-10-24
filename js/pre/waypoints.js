@@ -8,23 +8,23 @@ var $wpBottom = $('#bottomWp');
 
 $wpMiddle.waypoint(function () {
 
-	$('.backToTop-box').toggleClass('btnUPbtm-active');
+	$('.backToTop').toggleClass('backToTop--active2');
 
 }, {offset: '60%'});
 
 $wpBottom.waypoint(function () {
-	var posBtnTop = $('.backToTop-box');
-	var posBtnMd = $('.backToMiddle-box');
+	var posBtnTop = $('.backToTop');
+	var posBtnMd = $('.backToMiddle');
 	//WAY DOWN
-	if (posBtnTop.hasClass('btnUPbtm-active')){
-		posBtnTop.removeClass('btnUPbtm-active');
-		posBtnTop.addClass('btnUPtop-active');
-		posBtnMd.addClass('btnBM-active');	
+	if (posBtnTop.hasClass('backToTop--active2')){
+		posBtnTop.removeClass('backToTop--active2');
+		posBtnTop.addClass('backToTop--active1');
+		posBtnMd.addClass('backToMiddle--active');	
 	// WAY UP
 	} else {	
-		posBtnMd.removeClass('btnBM-active');
-		posBtnTop.removeClass('btnUPtop-active');
-		posBtnTop.addClass('btnUPbtm-active');
+		posBtnMd.removeClass('backToMiddle--active');
+		posBtnTop.removeClass('backToTop--active1');
+		posBtnTop.addClass('backToTop--active2');
 		
 	}
 	
@@ -33,9 +33,21 @@ $wpBottom.waypoint(function () {
 //SCROLL TOP to MID
 
 $wpMiddle.waypoint(function () {
-	$('.progressbar').toggleClass('progress-active');
-	$('.tech-logo').toggleClass('techlogo-active');
-	$('.h-wp').toggleClass('h-active');
+
+	if (!$('.techBox__progressbar').hasClass('techBox__progressbar--active')) {
+    	$('.techBox__progressbar').addClass('techBox__progressbar--active');
+	}
+
+	if (!$('.techBox__logo').hasClass('techBox__logo--active')) {
+    	$('.techBox__logo').toggleClass('techBox__logo--active');
+	}
+
+	if (!$('.containerMid__title').hasClass('containerMid__title--active')) {
+    	$('.containerMid__title').toggleClass('containerMid__title--active');
+	}
+
+	
+	
 
 
 }, {offset: '45%'});

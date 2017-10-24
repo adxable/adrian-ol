@@ -3,6 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Portfolio Front-end developer">
+	<meta name="author" content="Adrian Oleskiewicz">
 	<title>Adrian Oleśkiewicz Portfolio</title>
 	
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -13,102 +15,100 @@
 <body>
 	<!-- TOP SECTION HEADER AND JUMBOTRON -->
 	<header id="topWP" class="scroll">
-		<div class="logo"></div>
-		<a href="https://github.com/adxable" target="_blank"><div class="github"></div></a>
-		<a class="linkedin" href="https://linkedin.com/in/adrian-ole%C5%9Bkiewicz-a9bb5757/" target="_blank">
+		<img class="header__logo" src="img/logo/ao-logo.png"></img>
+		<a href="https://github.com/adxable" target="_blank"><div class="header__github"></div></a>
+		<a class="header__linkedin" href="https://linkedin.com/in/adrian-ole%C5%9Bkiewicz-a9bb5757/" target="_blank">
 			<i class="icon-linkedin-circled" aria-hidden="true"></i>
 		</a>
-		<a href="#bottomWp" class="email">
+		<a href="#bottomWp" class="header__email">
 			<i class="icon-mail" aria-hidden="true"></i>
 		</a>
 	</header>
-	<section class="top-container">	
+	<section class="containerTop">	
 		<div class="jumbotron">	
-			<div class="bg-sq"></div>
-			<div class="slogan">
+			<div class="jumbotron__bg"></div>
+			<div class="jumbotron__slogan">
 				<h1>
-					<span class=" slogan-bg">w</span>
+					<span class="jumb-slogan__bg">w</span>
 					<span>e</span>
 					<span>l</span>
 					<span>c</span>
 					<span>o</span>
 					<span>m</span>
 					<span>e</span>
-					<span class="slogan-dots">...</span>
+					<span class="jumb-slogan__dots">...</span>
 				</h1>
 			</div>	
-			<a class="scroll" href="#middleWP" ><div class="scroll-down scroll-1"></div></a>
-			<div class="line"></div>
+			<a class="scroll" href="#middleWP" ><div class="jumbotron__scrollDown scroll-1"></div></a>
+			<div class="jumbotron__line"></div>
 		</div>
-		<div class="side-content">
-			<div class="side-bg-color"></div>
-			<div class="bg-dots"></div>
+		<!-- //side-content -->
+		<div class="containerTop__sideContent">
+			<div class="sideContent__bgColor"></div>
 			
 			<i class="icon-user-circle-o"></i>
-			<div class="txt-box">
-				<p class="p-txt">
-					<span class="side-txt">Cześć,</span>
+			<div class="sideContent__txtBox">
+				<p class="txtBox__content">
+					<span>Cześć,</span>
 					<span>Nazywam się Adrian Oleśkiewicz.
 					Pasjonuję się projektowaniem i tworzeniem stron internetowych oraz aplikacji webowych. Moja przygoda rozpoczęła się w lipcu 2017 roku kiedy postanowiłem wziąść udział w Bootcampie. W pisaniu kodu odnalazłem coś, co daje mi wielką satysfakcję oraz nieograniczoną możliwość rozwoju. Jest to dla mnie ogromna motywacja, ponieważ zawsze w życiu starałem się robić to co lubię. Codziennie stawiam czoła nowym wyzwaniom, staram się uczyć czegoś nowego oraz ulepszać swój kod.</span>
 
-					<span class="side-txt">Obecnie realizuję projekty,zgłębiam wiedzę na temat Javascript oraz staram się wykorzystywać ją w praktyce. Szukam pierwszej pracy na stanowisku junior front-end developer, która da mi możliwośc dalszego rozwoju. Preferowana forma współpracy- B2B.</span>
+					<span>Obecnie realizuję projekty,zgłębiam wiedzę na temat Javascript oraz staram się wykorzystywać ją w praktyce. Szukam pierwszej pracy na stanowisku junior front-end developer, która da mi możliwośc dalszego rozwoju. Preferowana forma współpracy- B2B.</span>
 
-					<span class="side-txt">Poza technologiami front-end interesuję się realizacją dźwięku oraz sound design'em w oparciu o oprogramowanie typu DAW. Staram się aktywnie spędzać czas, lubię sporty zespołowe, które trenowałem przez większą część życia, co uważam dobrze komponuje się z urokiem pracy programisty. Ostatnie 2 lata spedziłem w Wielkiej Brytanii, w której rozwijałem umiejętności językowe.</span>
+					<span>Poza technologiami front-end interesuję się realizacją dźwięku oraz sound design'em w oparciu o oprogramowanie typu DAW. Staram się aktywnie spędzać czas, lubię sporty zespołowe, które trenowałem przez większą część życia, co uważam dobrze komponuje się z urokiem pracy programisty. Ostatnie 2 lata spedziłem w Wielkiej Brytanii, w której rozwijałem umiejętności językowe.</span>
 				</p>
 
 			</div>
 			
-			<div class="scroll-side">
-			
-			</div>
+			<div class="sideContent__arrow"></div>
 		</div>
 	</section>
 	<!-- MIDDLE SECTION - TECH ICONS AND PORTFOLIO -->
-	<section class="middle-container">
-		<h1 class="h-hide h-wp "><span>p</span>ortfolio</h1>
-		<div class="bg-portfolio"></div>
+	<section class="containerMid">
+		<h2 class="containerMid__title"><span>p</span>ortfolio</h2>
+		<div class="containerMid__img"></div>
 		<!-- MIDDLE WAYPOINT -->
 		<div id="middleWP" class="section-wp"></div>
-		<div class="tech-box">
-			<ul class="progressbar">
-				<li class="prog-item"><span class="tech-logo html-logo"></span></li>
-				<li class="prog-item"><span class="tech-logo css-logo"></span></li>
-				<li class="prog-item"><span class="tech-logo javascript-logo"></span></li>
-				<li class="prog-item"><span class="tech-logo sass-logo"></span></li>
-				<li class="prog-item"><span class="tech-logo bootstrap-logo"></span></li>
-				<li class="prog-item"><span class="tech-logo grunt-logo"></span></li>
-				<li class="prog-item"><span class="tech-logo git-logo"></span></li>
-				<li class="prog-item"><span class="tech-logo jquery-logo"></span></li>
+		<div class="containerMid__techBox">
+			<ul class="techBox__progressbar">
+				<li class="techBox__listItem"><span class="techBox__logo techBox__html"></span></li>
+				<li class="techBox__listItem"><span class="techBox__logo techBox__css"></span></li>
+				<li class="techBox__listItem"><span class="techBox__logo techBox__javascript"></span></li>
+				<li class="techBox__listItem"><span class="techBox__logo techBox__sass"></span></li>
+				<li class="techBox__listItem"><span class="techBox__logo techBox__bootstrap"></span></li>
+				<li class="techBox__listItem"><span class="techBox__logo techBox__grunt"></span></li>
+				<li class="techBox__listItem"><span class="techBox__logo techBox__git"></span></li>
+				<li class="techBox__listItem"><span class="techBox__logo techBox__jquery"></span></li>
 			</ul>
 		</div>
-		<div class="portfolio-box slide-in">
-			<div class="project-box">
-				<div class="project-pic project1"></div>
-				<div class="p-info p-info1">
+		<div class="containerMid__portfolio">
+			<div class="containerMid__project">
+				<div class="project__img project__img1"></div>
+				<div class="project__links">
 					<a href="http://dklimowicz-nailsart.pl" target="_blank"><span class="icon-chrome"></span></a>
 					<a href="https://github.com/adxable/dklimowicz-nailsart" target="_blank"><span class="icon-github-circled"></span></a>
 		
 				</div>
 			</div>
-			<div class="project-box">
-				<div class="project-pic project2"></div>
-				<div class="p-info p-info2">
+			<div class="containerMid__project">
+				<div class="project__img project__img2"></div>
+				<div class="project__links">
 					<a href="CocktailWizzard/index.html" target="_blank"><span class="icon-chrome"></span></a>
 					<a href="https://github.com/adxable/Cocktail-Wizzard" target="_blank"><span class="icon-github-circled"></span></a>
 					<span id="modalBtn" class="icon-info-circled"></span>
 				</div>
 			</div>
-			<div class="project-box">
-				<div class="project-pic project3"></div>
-				<div class="p-info p-info3">
+			<div class="containerMid__project">
+				<div class="project__img project__img3"></div>
+				<div class="project__links">
 					<a href="http://molooh.com" target="_blank"><span class="icon-chrome"></span></a>
 					<a href="https://github.com/adxable/molooh" target="_blank"><span class="icon-github-circled"></span></a>
 			
 				</div>
 			</div>
-			<div class="project-box">
-				<div class="project-pic project4"></div>
-				<div class="p-info p-info4">
+			<div class="containerMid__project">
+				<div class="project__img project__img4"></div>
+				<div class="project__links">
 					<a href="https://github.com/adxable/adrian-ol" target="_blank"><span class="icon-github-circled"></span></a>
 				
 				</div>
@@ -116,44 +116,44 @@
 		</div>		
 	</section>
 
-	<a href="#topWP" class="scroll">
-		<div class="backToTop-box">
-			<div class="backToTop"><span>TOP</span></div>
-		</div>
-	</a>
-
-	<a href="#middleWP" class="scroll">
-		<div class="backToMiddle-box">
-			<div class="backToMiddle"><span>MID</span></div>
-		</div>
-	</a>
-
-	</div>
 	<!-- BOTTOM SECTION -->
-	<section class="bottom-container">
-		<h1><span>K</span>ONTAKT</h1>
-		<div class="bg-bottom"></div>
+	<section class="containerBottom">
+		<h2><span>K</span>ONTAKT</h2>
+		<div class="containerBottom__img"></div>
 		<div id="bottomWp" class="section-wp"></div>
-		<div class="form-container">
-			<form  action="https://formspree.io/adrian.oleskiewicz@gmail.com" method="POST">
+		<!-- FORM MSG-->
+		<div class="containerBottom__form">
+			<form action="https://formspree.io/adrian.oleskiewicz@gmail.com" method="POST">
 				<input type="text" name="name" placeholder="Imię.." required>
 				<input type="email" name="_replyto" placeholder="email.." required>
 				<textarea type="text" name="message" placeholder="treść wiadomości.." required></textarea>
 				<input type="submit" value="Send">
 			</form>
-			<div class="bg-contact"></div>
 		</div>
 	</section>
 	<footer>
-		<div class="icons-container">
+		<div class="footer__icons">
 			<span class="icon-mobile"><p>(+48) 57-57-68-964</p></span>
 			<span class="icon-at-circled"><p>adrian.oleskiewicz@gmail.com</p></span>
 			<a href="https://linkedin.com/in/adrian-ole%C5%9Bkiewicz-a9bb5757/" target="_blank"><span class="icon-linkedin-circled"><p>linkedin</p></span></a>
 			<a href="https://github.com/adxable" target="_blank"><span class="icon-github-circled"><p>github</p></span></a>
 		</div>
-		<p>designed by<br> Adrian Oleśkiewicz</p>
-		<p>2017</p>
+		<p>designed by Adrian Oleśkiewicz</p>
 	</footer>
+
+	<!-- BUTTONS BACK TO TOP/MIDDLE -->
+	<a href="#topWP" class="scroll">
+		<div class="backToTop">
+			<div class="backToTop__button"><span>TOP</span></div>
+		</div>
+	</a>
+
+	<a href="#middleWP" class="scroll">
+		<div class="backToMiddle">
+			<div class="backToMiddle__button"><span>MID</span></div>
+		</div>
+	</a>
+
 	<!-- // MODAL -->
 	<div id="modal" class="modal-1">
 		<div class="modal-content">
@@ -170,7 +170,7 @@
 				<p>	Mam kilka kolejnych pomysłów, nad któymi obecnie pracuję i planuję nimi wzbogacić mój projekt.</p>
 
 			</div>
-			<a class="app-link" href="cocktailApp/index.html"><span>Link</span></a>
+			<a class="app-link" href="CocktailWizzard/index.html"><span>Link</span></a>
 		</div>
 	</div>
 
